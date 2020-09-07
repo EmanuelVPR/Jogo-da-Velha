@@ -3,28 +3,33 @@
 <meta charset="UTF-8"/>
 <meta content="width-device-width, escale: 1.0">
 <link rel="stylesheet" href="estilo.css">
+
 <head>
     <title>Jogo da Velha</title>
 </head>
+
 <body>
     <h1 id="turno">
         <strong>TURNOS</strong>
     </h1>
-        <audio id="audio" src="som/Inicio.mp3">
-        </audio>
-        <input type="button" id="botao" onmousedown ="apertar()" onclick="jogar()"  value="JOGAR">
-            <section id="secao" hidden>
-                <div id="a" onclick="xbola('a')"></div>
-                <div id="b" onclick="xbola('b')"></div>
-                <div id="c" onclick="xbola('c')"></div>
-                <div id="d" onclick="xbola('d')"></div>
-                <div id="e" onclick="xbola('e')"></div>
-                <div id="f" onclick="xbola('f')"></div>
-                <div id="g" onclick="xbola('g')"></div>
-                <div id="h" onclick="xbola('h')"></div>
-                <div id="i" onclick="xbola('i')"></div>
-            </section>
-           <button id="recomecar" onclick = 'recomecar()'>Recomeçar</button>
+    <audio id="audio" src="som/Inicio.mp3"></audio>
+    <audio id="audio2" src="som/ganho.mp3"></audio>
+    <audio id="audio3" src="som/marcando.mp3"></audio>
+    <audio id="audio4" src="som/empate.mp3"></audio>
+    <input type="button" id="botao" onmousedown="apertar()" onclick="jogar()" value="JOGAR">
+    <section id="secao" hidden>
+        <div id="a" class="class" onclick="xbola('a')"></div>
+        <div id="b" class="class" onclick="xbola('b')"></div>
+        <div id="c" class="class" onclick="xbola('c')"></div>
+        <div id="d" class="class" onclick="xbola('d')"></div>
+        <div id="e" class="class" onclick="xbola('e')"></div>
+        <div id="f" class="class" onclick="xbola('f')"></div>
+        <div id="g" class="class" onclick="xbola('g')"></div>
+        <div id="h" class="class" onclick="xbola('h')"></div>
+        <div id="i" class="class" onclick="xbola('i')"></div>
+    </section>
+    <button id="noturn" onclick="noturno()">Modo noturno</button>
+    <button id="recomecar" onclick='recomecar()'>Recomeçar</button>
     <script src="script.js"></script>
 </body>
 

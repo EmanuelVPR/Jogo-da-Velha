@@ -2,11 +2,28 @@
 
 body{
     background-color: rgb(236, 179, 103);
+    transition: 0.6s;
 }
 
 h1{
     text-align: center;
+    font-size: 30pt;
+}
+
+button#noturn{
+    position: fixed;
+    left: 10px;
+    top:10px;
     font-size: 20pt;
+    padding: 20px;
+    border: 5px solid red;
+    border-radius: 40px;
+    background-color: rgb(104, 168, 168);
+    box-shadow: 2px 2px 2px black;
+}
+
+button#noturn:hover{
+    background-color: rgb(156, 245, 245);
 }
 
 input#botao{
@@ -40,6 +57,7 @@ div#a, div#b, div#c, div#d, div#e, div#f, div#g, div#h, div#i{
     border: 2px solid black;
     width: 150px;
     height: 150px;
+    transition: 0.6s;
 }
 
 div#a:hover, div#b:hover, div#c:hover, div#d:hover, div#e:hover, 
@@ -50,9 +68,13 @@ div#f:hover, div#g:hover, div#h:hover, div#i:hover{
 }
 
 section#secao{
+    position: absolute;
+    left: 53%;
+    top: 55%;
+    transform:translate(-50%, -50%);  
     width: 600px;
     margin: auto;
-    top: 50px;
+ 
 }
 
 button#recomecar{
@@ -68,6 +90,6 @@ button#recomecar{
 
 
 button#recomecar:hover{
-    background-color: rgb(253, 195, 120);
+    background-color: #fdc378;
     transition: 0.6s;
 }
