@@ -171,7 +171,7 @@ function noturno() {
             let divs = document.getElementsByTagName('div')[p];
             divs.style.backgroundColor = 'aqua';
         }
-        corpo.style.backgroundColor = '#fdc378'
+        corpo.style.backgroundColor = '#ecb367'
         h1.style.color = '#000000';
         not.style.border = '5px solid red';
         //location.reload();
