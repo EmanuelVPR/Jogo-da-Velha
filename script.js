@@ -140,7 +140,7 @@ function noturno() {
     let corpo = document.getElementsByTagName('body')[0];
     let h1 = document.getElementById('turno');
     let not = document.getElementById('noturn');
-    not.style.border = '5px solid green';
+    not.style.border = '5px solid rgb(30,100, 24)';
     if (click != 1) {
         click = 1;
     } else {
@@ -160,20 +160,21 @@ function noturno() {
         }
 
         localStorage.setItem('click', 1);
-        corpo.style.backgroundColor = '#222222'
+        corpo.style.backgroundColor = '#222222';
         h1.style.color = '#ffffff';
 
     } else {
         localStorage.clear();
         corpo.style.transition = '0.6s';
-        not.style.border = '5px solid green';
+        not.style.border = '5px solid rgb(30,100, 24)';
+        
         for (let p = 0; p < 9; p++) {
             let divs = document.getElementsByTagName('div')[p];
             divs.style.backgroundColor = 'aqua';
         }
         corpo.style.backgroundColor = '#ecb367'
         h1.style.color = '#000000';
-        not.style.border = '5px solid red';
+        not.style.border = '5px solid rgb(158, 27, 27)';
         //location.reload();
     }
 }

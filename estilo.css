@@ -16,10 +16,11 @@ button#noturn{
     top:10px;
     font-size: 20pt;
     padding: 20px;
-    border: 5px solid red;
+    border: 5px solid rgb(158, 27, 27);
     border-radius: 40px;
     background-color: rgb(104, 168, 168);
     box-shadow: 2px 2px 2px black;
+    outline: none;
 }
 
 button#noturn:hover{
@@ -62,9 +63,8 @@ div#a, div#b, div#c, div#d, div#e, div#f, div#g, div#h, div#i{
 
 div#a:hover, div#b:hover, div#c:hover, div#d:hover, div#e:hover, 
 div#f:hover, div#g:hover, div#h:hover, div#i:hover{
-    background-color: rgb(126, 250, 250);
+    background-color: rgb(79, 235, 235);
     transition: 0.2s;
-    
 }
 
 section#secao{
